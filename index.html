@@ -59,7 +59,7 @@
                     </div>
 
                     <ul class="dropdown-menu dropdown-menu-end" style="color: white;">
-                        <li><button class="dropdown-item" type="button">Profile</button></li>
+                        <li><button class="dropdown-item" type="button">posts</button></li>
                         <li><button class="dropdown-item" type="button">Accesibility</button></li>
                         <li><button class="dropdown-item" type="button">Privacy and Data</button></li>
                         <li>
@@ -74,14 +74,94 @@
     <!-- End of Navbar -->
 
     <!-- Tabs -->
-    <ul class="nav nav-tabs mt-2 position-absolute start-50 translate-middle-x">
-        <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#"><i class="fa-solid fa-table-cells"></i></a>
+    <ul class="nav nav-tabs d-flex justify-content-center" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="grid-tab" data-bs-toggle="tab" data-bs-target="#grid-tab-pane" type="button" role="tab" aria-controls="grid-tab-pane" aria-selected="true"><i class="fa-solid fa-table-cells"></i></button>
         </li>
-        <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#"><i class="fa-solid fa-square"></i></a>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="posts-tab" data-bs-toggle="tab" data-bs-target="#posts-tab-pane" type="button" role="tab" aria-controls="posts-tab-pane" aria-selected="false"><i class="fa-solid fa-square"></i></button>
         </li>
     </ul>
+    <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="grid-tab-pane" role="tabpanel" aria-labelledby="grid-tab" tabindex="0">
+            <div class="row mx-1 my-3">
+                <div class="col-4 mb-3">
+                    <img src="https://img.freepik.com/foto-gratis/al-atardecer-playa-tropical-mar-palmera-coco_74190-1075.jpg?w=2000" class="card-img-top" alt="..." style="height: 280px">
+                </div>
+                <div class="col-4 mb-3">
+                    <img src="https://media.admagazine.com/photos/618a679fa9f7fab6f0622f14/master/w_1600%2Cc_limit/64213.jpg" class="card-img-top" alt="..." style="height: 280px">
+                </div>
+                <div class="col-4 mb-3">
+                    <img src="https://static4.depositphotos.com/1003352/275/i/600/depositphotos_2755864-stock-photo-tropical-beach-at-sunset.jpg" class="card-img-top" alt="..." style="height: 280px">
+                </div>
+                <div class="col-4 mb-3">
+                    <img src="https://static4.depositphotos.com/1003352/275/i/600/depositphotos_2755864-stock-photo-tropical-beach-at-sunset.jpg" class="card-img-top" alt="..." style="height: 280px">
+                </div>
+                <div class="col-4 mb-3">
+                    <img src="https://img.freepik.com/foto-gratis/al-atardecer-playa-tropical-mar-palmera-coco_74190-1075.jpg?w=2000" class="card-img-top" class="card-img-top" alt="..." style="height: 280px">
+                </div>
+                <div class="col-4 mb-3">
+                    <img src="https://media.admagazine.com/photos/618a679fa9f7fab6f0622f14/master/w_1600%2Cc_limit/64213.jpg" class="card-img-top" alt="..." style="height: 280px">
+                </div>
+                <div class="col-4">
+                    <img src="https://media.admagazine.com/photos/618a679fa9f7fab6f0622f14/master/w_1600%2Cc_limit/64213.jpg" class="card-img-top" alt="..." style="height: 280px">
+                </div>
+                <div class="col-4">
+                    <img src="https://static4.depositphotos.com/1003352/275/i/600/depositphotos_2755864-stock-photo-tropical-beach-at-sunset.jpg" class="card-img-top" alt="..." style="height: 280px">
+                </div>
+                <div class="col-4">
+                    <img src="https://img.freepik.com/foto-gratis/al-atardecer-playa-tropical-mar-palmera-coco_74190-1075.jpg?w=2000" class="card-img-top" class="card-img-top" alt="..." style="height: 280px">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="tab-pane fade d-flex justify-content-center" id="posts-tab-pane" role="tabpanel" aria-labelledby="posts-tab" tabindex="0">
+        <div class="d-flex justify-content-center">
+            <div class="container">
+                <div class="card rounded-1 m-3" style="width: 35rem;">
+                    <div class="header">
+                        <h5 class="card-title my-2 py-2 ms-2">Beautiful sunset</h5>
+                        <span class="position-absolute top-0 end-0 me-3 mt-3">18/01</span>
+                    </div>
+                    <img src="https://img.freepik.com/foto-gratis/al-atardecer-playa-tropical-mar-palmera-coco_74190-1075.jpg?w=2000" alt="...">
+
+                    <p class="my-2 mx-2"><strong>204 likes</strong></p>
+                    <p class="card-text mb-2 mx-2">Just took this picture.</p>
+                </div>
+                <div class="card rounded-1 m-3" style="width: 35rem;">
+                    <div class="header">
+                        <h5 class="card-title my-2 py-2 ms-2">Beautiful sunset</h5>
+                        <span class="position-absolute top-0 end-0 me-3 mt-3">18/01</span>
+                    </div>
+                    <img src="https://media.admagazine.com/photos/618a679fa9f7fab6f0622f14/master/w_1600%2Cc_limit/64213.jpg" alt="...">
+
+                    <p class="my-2 mx-2"><strong>204 likes</strong></p>
+                    <p class="card-text mb-2 mx-2">Just took this picture.</p>
+                </div>
+                <div class="card rounded-1 m-3" style="width: 35rem;">
+                    <div class="header">
+                        <h5 class="card-title my-2 py-2 ms-2">Beautiful sunset</h5>
+                        <span class="position-absolute top-0 end-0 me-3 mt-3">18/01</span>
+                    </div>
+                    <img src="https://static4.depositphotos.com/1003352/275/i/600/depositphotos_2755864-stock-photo-tropical-beach-at-sunset.jpg" alt="...">
+
+                    <p class="my-2 mx-2"><strong>204 likes</strong></p>
+                    <p class="card-text mb-2 mx-2">Just took this picture.</p>
+                </div>
+                <div class="card rounded-1 m-3" style="width: 35rem;">
+                    <div class="header">
+                        <h5 class="card-title my-2 py-2 ms-2">Beautiful sunset</h5>
+                        <span class="position-absolute top-0 end-0 me-3 mt-3">18/01</span>
+                    </div>
+                    <img src="https://media.istockphoto.com/id/932811716/es/foto/palmera-tropical-en-el-fondo-de-mar-y-puesta-del-sol-verano.jpg?b=1&s=170667a&w=0&k=20&c=2im2COJpVpTGNTstanpt0gFWjVzjGqyXED1F7r9dpUU=" alt="...">
+
+                    <p class="my-2 mx-2"><strong>204 likes</strong></p>
+                    <p class="card-text mb-2 mx-2">Just took this picture.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
